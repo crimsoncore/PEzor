@@ -8,7 +8,7 @@ sub execute_inmemory {
     debug(34);
 
     # manually parse args
-    find($command, ' ([\w\/\.]*)')
+    find($command, ' ([\w\/\.][\w\/\.\-]*)')
     ($match, $type) = matched();
     $executable = copy($match);
 
